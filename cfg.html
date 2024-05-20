@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>YuLin CFG</title>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .title-bar {
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+        
+        .update-container {
+            background-color: #1567FF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        #download-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        #aim-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        #test-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        #download-btn:hover {
+            background-color: #00cfff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #aim-btn:hover {
+            background-color: #66ff00;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #test-btn:hover {
+            background-color: #8b0000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ccc;
+            margin-top: 20px;
+        }
+        .title-bar {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.5rem; /* 或者根据需要调整字体大小 */
+            position: relative; /* 为之后的绝对定位做准备 */
+        }
+        
+        h1.title-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .parent {
+          position: relative; /* 将父元素设置为相对定位 */
+          width: 300px; /* 假设父元素宽度为300px */
+          height: 200px; /* 假设父元素高度为200px */
+        }
+        
+        .image {
+          position: absolute; /* 将图片设置为绝对定位 */
+          width: 15%; /* 图片宽度为父元素宽度的15% */
+          right: -15%; /* 将图片的右边缘移动到父元素的外部 */
+          top: 50%; /* 将图片的上边缘移动到父元素的中间 */
+          transform: translateY(-50%); /* 将图片垂直居中 */
+        }
+        .aw {
+            color: red;
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title-bar">Aimware参数下载</h1>
+    </header>
+    <div class="update-container">
+        <h class="aw">Aimware.NET</h>
+        <h2>速射+有扩散 · 测试版</h2>
+        <p>蓝奏云下载: <a id="download-btn" href="https://i-930.wwentua.com:446/05201100181857479bb/2024/05/20/d4220ef3bb51c691d3622876a3a785ef.cfg?st=NKsr-bN-MwoE-oRorV3-qQ&e=1716177486&b=AgsA6QKZUfxZ6lObV5AFXAC8XYEEmgLhBeYIgVeSUOUCtgyQUttZugLeA_axQ5lPCB_aEBcwxuAWFWYg_c_c&fi=181857479&pid=59-110-235-8&up=2&mp=0&co=0"">稳定版</a></p>
+        <p>蓝奏云下载: <a id="test-btn" href="https://i-120.wwentua.com:446/05201100181857461bb/2024/05/20/6dfc8e9ce4d5f69682dbcce8921af44e.cfg?st=BW19kWudQIjHPv3rCSW47g&e=1716177445&b=Vl9ZsFLJWPUHtF6WVZJSC1blDucDiQLsAf0AmFe5UNIFyFy5U_bNY2VTkA9oH1VV_aATddZ1E3&fi=181857461&pid=59-110-235-8&up=2&mp=0&co=0"">测试版</a></p>
+        <p>蓝奏云下载: <a id="aim-btn" href="https://i-020.wwentua.com:446/05201100181857460bb/2024/05/20/7e0aa37e9fd2bdf114a4fcee88cdf879.cfg?st=UaD_Td7mB_AAOyNjzgzL_w&e=1716177363&b=Bg8N5AWeVvtZ6l6WB8BVDFXnWb4DvQbmBeoMlVS0VMgI3gwiBmVTMFlr&fi=181857460&pid=59-110-235-8&up=2&mp=0&co=0"">绿演版</a></p>
+        <div class="progress-bar"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
